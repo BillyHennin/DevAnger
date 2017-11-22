@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DevAnger.Models
 {
-    // Models returned by AccountController actions.
+    // Models returned by AppController actions.
     public class ExternalLoginConfirmationViewModel
     {
         [Required]

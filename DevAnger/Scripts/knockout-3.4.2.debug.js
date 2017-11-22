@@ -862,7 +862,7 @@ ko.exportSymbol('utils.domNodeDisposal.removeDisposeCallback', ko.utils.domNodeD
         documentContext || (documentContext = document);
         var windowContext = documentContext['parentWindow'] || documentContext['defaultView'] || window;
 
-        // Based on jQuery's "clean" function, but only accounting for table-related elements.
+        // Based on jQuery's "clean" function, but only Apping for table-related elements.
         // If you have referenced jQuery, this won't be used anyway - KO will use jQuery's "clean" function directly
 
         // Note that there's still an issue in IE < 9 whereby it will discard comment nodes that are the first child of

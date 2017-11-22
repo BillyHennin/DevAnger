@@ -47,8 +47,8 @@
                     window.location.hash = fragment.state || '';
                     dataModel.setAccessToken(fragment.access_token);
                 } else {
-                    // no token - so bounce to Authorize endpoint in AccountController to sign in or register
-                    window.location = "/Account/Authorize?client_id=web&response_type=token&state=" + encodeURIComponent(window.location.hash);
+                    // no token - so bounce to Authorize endpoint in AppController to sign in or register
+                    window.location = "/App/Authorize?client_id=web&response_type=token&state=" + encodeURIComponent(window.location.hash);
                 }
             }
 
